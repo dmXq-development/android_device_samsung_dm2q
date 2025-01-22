@@ -17,13 +17,13 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 PRODUCT_NAME := lineage_dm2q
 PRODUCT_DEVICE := dm2q
 PRODUCT_BRAND := Samsung
-PRODUCT_MODEL := SM-S9160
+PRODUCT_MODEL := SM-S916B
 PRODUCT_MANUFACTURER := Samsung
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="dm2qzhx-user 14 UP1A.231005.007 S9160ZHS5CXL1 release-keys" \
-    BuildFingerprint=samsung/dm2qzhx/dm2q:14/UP1A.231005.007/S9160ZHS5CXL1:user/release-keys \
-    DeviceProduct=dm2qzhx \
-    SystemName=dm2qzhx
+    BuildDesc="dm2qxxx-user 14 UP1A.231005.007 S916BXXS7CXL2 release-keys" \
+    BuildFingerprint=samsung/dm2qxxx/dm2q:14/UP1A.231005.007/S916BXXS7CXL2:user/release-keys \
+    DeviceProduct=dm2qxxx \
+    SystemName=dm2qxxx
