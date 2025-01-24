@@ -12,9 +12,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/samsung/dm2q/device.mk)
 
 # Inherit from the Lineage configuration.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/voltage/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_dm2q
+# Pif-certification
+$(call inherit-product-if-exists, vendor/certification/config.mk)
+
+# Bootanimation Resolution
+TARGET_BOOT_ANIMATION_RES := 1920
+
+PRODUCT_NAME := voltage_dm2q
 PRODUCT_DEVICE := dm2q
 PRODUCT_BRAND := Samsung
 PRODUCT_MODEL := SM-S916B
@@ -27,3 +33,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildFingerprint=samsung/dm2qxxx/dm2q:14/UP1A.231005.007/S916BXXS7CXL2:user/release-keys \
     DeviceProduct=dm2qxxx \
     SystemName=dm2qxxx
+
+# Voltage-Ify
+VOLTAGE_BUILD_TYPE = OFFICIAL
