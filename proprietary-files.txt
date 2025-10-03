@@ -304,11 +304,21 @@ vendor/bin/hw/vendor.samsung.hardware.thermal@1.0-service
 # Touchscreen firmware
 vendor/firmware/tsp_stm/fts2ba61y_dm2q.bin
 
+# VPU firmware
+vendor/firmware/vpu20_4v.mbn
+vendor/firmware/vpu20_4v_unsigned.mbn
+vendor/firmware/vpu30_4v.mbn
+vendor/firmware/vpu30_4v_16mb.mbn
+vendor/firmware/vpu30_4v_16mb_unsigned.mbn
+vendor/firmware/vpu30_4v_unsigned.mbn
+vendor/firmware/vpu33_4v.mbn
+vendor/firmware/vpu33_4v_unsigned.mbn
+vendor/firmware/vpu30_4v.mbn:odm/firmware/vpu30_4v.mbn|df08facc0470bb0d1a387f3fea7bac8bb3d22968
+
 # Vendor firmware - from S916BXXS6CXHA
 vendor/firmware/a740_zap.b02:odm/firmware/a740_zap.b02|8c049bc66ec35d93a8ab777b6ca38557074f2bfc
 vendor/firmware/a740_zap.mbn:odm/firmware/a740_zap.mbn|4b8e64b532e1d0364abb83e3ee8393094dd44561
 vendor/firmware/a740_zap.mdt:odm/firmware/a740_zap.mdt|06a6e8b90261d0e353ebd30e5fafaa52df038d7b
-vendor/firmware/vpu30_4v.mbn:odm/firmware/vpu30_4v.mbn|df08facc0470bb0d1a387f3fea7bac8bb3d22968
 
 # Vendor firmware
 vendor/firmware/a740_zap.b02
@@ -329,7 +339,6 @@ vendor/firmware/hpnv21g.bb9
 vendor/firmware/hpnv21g.bin
 vendor/firmware/mfc/mfc_fw_flash_s2miw04.bin
 vendor/firmware/ois_mcu_stm32g_fw.bin
-vendor/firmware/vpu30_4v.mbn
 
 # Wifi firmware
 vendor/firmware/Data.msc
